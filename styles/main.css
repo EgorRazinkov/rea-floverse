@@ -1,0 +1,422 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+	--primaryColor: #C5BCFF;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	background-color: var(--primaryColor);
+	font-weight: 400;
+	min-width: 440px;
+	margin: auto;
+}
+
+div.sticky {
+	position: sticky;
+	bottom: 1rem;
+	z-index: 999;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 32px 84px 12px 84px;
+}
+
+.logo {
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 100%;
+	color: #000000;
+}
+
+.logo a {
+	text-decoration: none;
+}
+
+.menu {
+	width: 24px;
+  	height: 24px;
+  	cursor: pointer;
+  	background: none;
+	position: relative;
+	border: none;
+}
+
+.menu span {
+	width: 3px;
+	height: 3px;
+	background: #000000;
+	position: absolute;
+	top: 10.5px;
+	border-radius: 50%;
+}
+
+.menu span:first-child {
+	left: 4px;
+}
+.menu span:nth-child(2) {
+	left: 10.5px;
+}
+.menu span:last-child {
+	left: 17px;
+}
+
+.shadow {
+	height: 16px;
+	background: linear-gradient(180deg,
+	var(--primaryColor),
+	rgba(197, 188, 255, 0));
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner-area {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 52px;
+	margin-top: -4px;
+}
+
+.text-area {
+	max-width: 1024px;
+}
+
+.banner-area div.text-area {
+	font-weight: 500;
+	font-size: 72px;
+	line-height: 100%;
+	text-align: center;
+	color: #000000;
+	margin: 0 144px;
+}
+
+.banner-area div.text-area span {
+	color: #FF7474;
+}
+
+.cards-area-show {
+	display: block;
+}
+
+.cards-area-mob {
+	display: none;
+}
+
+.cards-area-desk {
+	display: block;
+}
+
+.cards-back {
+	display: flex;
+	align-items: flex-start;
+}
+
+.cards-back div.card:nth-child(1) {
+	margin-top: 116px;
+	margin-left: 8px; 
+	opacity: 0.2;
+}
+
+.cards-back div.card:nth-child(2) {
+	margin-top: 160px;
+	margin-left: 280px; 
+	opacity: 0.2;
+}
+
+.cards-back div.card:nth-child(3) {
+	margin-left: 8px; 
+	margin-right: 8px; 
+	margin-top: 240px; 
+	opacity: 0.2;
+}
+
+.card {
+	max-width: 344px;
+	border: 1px solid rgba(180, 154, 255, 0.15);
+	border-radius: 12px;
+	background: #F2F2F2;
+}
+
+.card__content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 14px 16px 16px 16px;
+	gap: 20px;
+	position: relative;
+}
+
+.card__text {
+	font-size: 16px;
+	line-height: 125%;
+	color: #000000;
+	padding: 0px 20px 0px 0px;
+}
+
+.card__tag {
+	display: flex;
+	align-items: center;
+	padding: 0px;
+}
+
+.tag {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 4px 8px;
+	gap: 4px;
+	border-radius: 24px;
+	font-size: 16px;
+	line-height: 100%;
+	color: #000000;
+}
+
+.card__like {
+	position: absolute;
+	right: 16px;
+	top: 18px;
+	width: 12px;
+	height: 12px;
+}
+
+.email-search {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #000000;
+	border-radius: 16px;
+	padding: 16px;
+	gap: 24px;
+	width: 100%;
+	max-width: 560px;
+}
+
+.email__form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	gap: 8px;
+}
+
+.email__form input {
+	background: #FFFFFF;
+	border-radius: 12px;
+	padding: 20px 16px;
+	text-align: center;
+	width: 100%;
+	border: none;
+}
+.email__input::placeholder {
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 100%;
+	color: #000000;
+	opacity: 0.5;
+}
+.email__button{
+	background: #FF7474;
+	border-radius: 12px;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 100%;
+	color: #000000;
+	padding: 12px 16px;
+	border: none;
+	cursor: pointer;
+}
+.email__text {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 125%;
+	text-align: center;
+	color: var(--primaryColor);
+}
+
+.content-area {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 80px;
+	margin: 80px 196px 80px 196px;
+}
+
+.text-area {
+	font-weight: 500;
+	font-size: 56px;
+	line-height: 120%;
+	text-align: center;
+	color: #000000;
+}
+
+.list-area {
+	gap: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 124px;
+	justify-content: center;
+	align-items: center;
+}
+
+footer {
+	display: flex;
+	gap: 8px;
+	align-items: flex-start;
+	margin: auto;
+	margin-bottom: 80px;
+	max-width: 560px;
+	font-size: 16px;
+	line-height: 125%;
+	color: #000000;
+}
+
+.links-area {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 16px;
+	font-size: 16px;
+	line-height: 125%;
+}
+
+.links-area a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.address-area {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.address-area a {
+	text-decoration: none;
+}
+
+.tag__color-report {
+	background:#FF7474;
+}
+
+.tag__color-all {
+	background: var(--primaryColor);
+}
+
+.tag__color-metric {
+	background: #74FF8A;
+}
+
+.tag__color-address {
+	background: rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(10px);
+}
+
+@media screen and (max-width: 440px) {
+	footer {
+		margin: 60px 20px 20px 20px;
+	}
+}
+
+@media screen and (max-width: 1048px) {
+
+	.wrapper {
+		padding: 32px 20px 12px 20px;
+	}
+
+	.banner-area {
+		margin: 0 12px;
+		margin-top: 36px;
+	}
+
+	.banner-area div.image-area img {
+		width: 200px;
+	}
+
+	.banner-area div.text-area {
+		font-size: 44px;
+		margin: 0;
+	}
+
+	.card__content {
+		padding: 12px;
+		gap: 12px;
+	}
+
+	.card__text {
+		font-size: 14px;
+	}
+
+	.card__like {
+		right: 12px;
+		top: 16px;
+	}
+
+	.tag {
+		font-size: 12px;
+	}
+	
+	.text-area {
+		font-size: 32px;
+	}
+
+	.content-area {
+		gap: 60px;
+		margin: 60px 20px;
+	}
+
+	.list-area {
+		margin: 0 16px;
+	}
+
+	.list__item img{
+		width: 96px;
+	}
+
+	.main-image {
+		width: 120px;
+	}
+
+	.cards-area-mob {
+		display: block;
+	}
+	
+	.cards-area-desk {
+		display: none;
+	}
+
+}
+
+.cards-area-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
