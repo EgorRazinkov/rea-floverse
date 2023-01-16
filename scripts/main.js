@@ -18,6 +18,7 @@ size.addEventListener('change', () => {
     this.rerender();
 });
 
+
 /* init */
 
 (() => {
