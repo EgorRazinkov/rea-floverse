@@ -1,520 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>floverse</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Floverse</title>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="styles/main.css"/>
+
 </head>
 <body>
-	<div class="top-area">
-		<header>
-			<div class="wrapper">
-				<div class="logo">
-					<img src="images/LOGO.svg" alt="Logo"/>
-					<a href="#">
-						<h1>floverse</h1>
-					</a>
-				</div>
-				<a class="menu" href="#control">
-					<span></span>
-					<span></span>
-					<span></span>
-				</a>
-			</div>
-			<div class="shadow"></div>
-		</header>
-		<div class="banner-area">
-			<div class="image-area">
-				<img 
-					class="banner-image"
-					src="/images/MAIN_VISUAL.svg" 
-					alt="BannerImage"
-				/>
-			</div>
-			<!-- <div style="min-height: 220px;display: flex; flex-direction: column;justify-content: center;align-items: center; border: 1px solid blue;;"> -->
-			<div class="text-area">
-				<span>Imagine</span>
-				<span class="typer" data-delay="100" data-deletedelay="1000" repeat="Infinty" style="color: black;"></span>
-    			<span class="cursor" data-delay="100" data-deletedelay="1000" repeat="Infinty" style="color: black;"></span>
-			</div>
-			<!-- </div> -->
-		
-		<div class="cards-area-desk">
-		<div class="cards-area-grid">
-			<div style="grid-area: 1/1/2/2;">
-			<div class="cards-back">
-				<div class="card">
-					<div class="card__content">
-						<div class="card__text">
-							I have created
-							the list with the top charts of your
-							team. Wanna check this out?
-						</div>
-						<div class="card__tag">
-							<div class="tag tag__color-report">
-								<img src="tags/icon_report.svg" alt="TagIconReport">
-								<div>report</div>
-							</div>
-							<div class="tag tag__color-report">
-								<div>report</div>
-							</div>
-						</div>
-						<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-					</div>
-				</div>
-				<div class="card">
-					<div class="card__content">
-						<div class="card__text">Show me the list of all dashboards that you know</div>
-						<div class="card__tag">
-							<div class="tag tag__color-all">
-								<div>hot</div>
-							</div>
-							<div class="tag tag__color-all">
-								<div>all</div>
-							</div>
-						</div>
-						<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-					</div>
-				</div>
-				<div class="card">
-					<div class="card__content">
-						<div class="card__text">What is the price of the customer acqusition</div>
-						<div class="card__tag">
-							<div class="tag tag__color-all">
-								<div>charts</div>
-							</div>
-							<div class="tag tag__color-all">
-								<div>all</div>
-							</div>
-						</div>
-						<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-					</div>
-				</div>
-			</div>
-			</div>
-			<div style="grid-area: 1/1/2/2; z-index: 998;">
-				<div class="card" style="margin-left: 272px; max-width: 376px;">
-					<div class="card__content">
-						<div class="card__text" style="font-size: 22px;">I want to know the MRR for each pricing plan from last week. Could you help me with that?</div>
-						<div class="card__tag">
-							<div class="tag tag__color-all">
-								<div>charts</div>
-							</div>
-							<div class="tag tag__color-all">
-								<div>all</div>
-							</div>
-						</div>
-						<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
-		
-		<div class="cards-area-mob">
-			<div class="cards-area-grid">
-				<div style="grid-area: 1/1/2/2;">
-					<div style="display: flex; align-items: flex-start; gap: 8px;">
-						<div style="flex-basis: 50%;">
-							<div class="card" style="opacity: 1.0;">
-								<div class="card__content">
-									<div class="card__text">
-										I want to know the MRR for each pricing
-										plan from last week. Could you help me with that?
-									</div>
-									<div class="card__tag">
-										<div class="tag tag__color-all">
-											<div>all</div>
-										</div>
-									</div>
-									<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-								</div>
-							</div>
-							<div class="card" style="margin-top: 12px; opacity: 0.2;">
-								<div class="card__content">
-									<div class="card__text">
-										Please show me all dashboards displaying the
-										payback period
-									</div>
-									<div class="card__tag">
-										<div class="tag tag__color-all">
-											<div>all</div>
-										</div>
-									</div>
-									<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-								</div>
-							</div>
-						</div>
-						<div class="card" style="margin-top: 26px; opacity: 0.4; flex-basis: 50%;">
-							<div class="card__content">
-								<div class="card__text"">
-									I need a new dashboard, can you help me make one?
-								</div>
-								<div class="card__tag">
-									<div class="tag tag__color-all">
-										<div>all</div>
-									</div>
-								</div>
-								<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		</div>
-	</div>
-	<div class="content-area">
-		<div class="text-area">Develop a data-driven culture,
-			reduce mistakes and make decisions quicker.
-			Our smart data space and #slackassistant can
-			answer up to 80% of data queries in seconds.
-				Your data assistant will never take sick leave
-				or vacation, won’t need to be interviewed and
-				will never quit.
-		</div>
-		<img class="app-image"
-			src="/images/MAIN_MOB.svg"
-			alt="AppImage" 
-			style="filter: drop-shadow(0px 40px 80px rgba(0, 0, 0, 0.2)); border-radius: 24px;"
-		/>
-		<div class="cards-area-mob" style="margin: 0 -8px;">
-			<div style="display: flex; align-items: flex-start; gap: 8px;">
-				<div style="flex-basis: 50%;">
-					<div class="card" style="opacity: 1.0;">
-						<div class="card__content">
-							<div class="card__text">
-								I created 27 new charts for your team covering the last two weeks
-							</div>
-							<div class="card__tag">
-								<div class="tag tag__color-all">
-									<div>all</div>
-								</div>
-							</div>
-							<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-						</div>
-					</div>
-					<div class="card" style="margin-top: 50px; opacity: 0.6;">
-						<div class="card__content">
-							<div class="card__text">
-								How do we define MAU?
-							</div>
-							<div class="card__tag">
-								<div class="tag tag__color-all">
-									<div>all</div>
-								</div>
-							</div>
-							<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-						</div>
-					</div>
-					<div class="card" style="margin-top: 8px; opacity: 0.2;">
-						<div class="card__content">
-							<div class="card__text">
-								I need access to our performance marketing data, how do I get it?
-							</div>
-							<div class="card__tag">
-								<div class="tag tag__color-all">
-									<div>all</div>
-								</div>
-							</div>
-							<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-						</div>
-					</div>
-				</div>
-				<div style="flex-basis: 50%;">
-					<div class="card" style="margin-top: 28px; opacity: 0.8;">
-						<div class="card__content">
-							<div class="card__text"">
-								Can you get me a list of churned customers over the last 14 days?
-							</div>
-							<div class="card__tag">
-								<div class="tag tag__color-all">
-									<div>all</div>
-								</div>
-							</div>
-							<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-						</div>
-					</div>
-					<div class="card" style="margin-top: 8px; opacity: 0.4;">
-						<div class="card__content">
-							<div class="card__text"">
-								Can you get me a list of churned customers over the last 14 days?
-							</div>
-							<div class="card__tag">
-								<div class="tag tag__color-all">
-									<div>all</div>
-								</div>
-							</div>
-							<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="cards-area-desk">
-			<div style="display: flex; align-items: flex-start; gap: 8px;">
-			<div class="card" style="opacity: 1.0;">
-				<div class="card__content">
-					<div class="card__text">I created 27 new charts for your team covering the last two weeks</div>
-					<div class="card__tag">
-						<div class="tag tag__color-all">
-							<div>JFYI</div>
-						</div>
-						<div class="tag tag__color-all">
-							<div>all</div>
-						</div>
-					</div>
-					<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-				</div>
-			</div>
-			<div>
-				<div class="card" style="margin-top: 40px; opacity: 0.8;">
-					<div class="card__content">
-						<div class="card__text">Can you get me a list of churned customers over the last 14 days?</div>
-						<div class="card__tag">
-							<div class="tag tag__color-all">
-								<div>export</div>
-							</div>
-							<div class="tag tag__color-all">
-								<div>all</div>
-							</div>
-						</div>
-						<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-					</div>
-				</div>
-				<div class="card" style="margin-top: 134px; opacity: 0.5;">
-					<div class="card__content">
-						<div class="card__text">I need access to our performance marketing data, how do I get it?</div>
-						<div class="card__tag">
-							<div class="tag tag__color-all">
-								<div>data access</div>
-							</div>
-							<div class="tag tag__color-all">
-								<div>all</div>
-							</div>
-						</div>
-						<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-					</div>
-				</div>
-			</div>
-			<div>
-				<div class="card" style="margin-top: 131px; opacity: 0.7;">
-					<div class="card__content">
-						<div class="card__text">How do we define MAU?</div>
-						<div class="card__tag">
-							<div class="tag tag__color-metric">
-								<img src="tags/icon_metric.svg" alt="TagIconReport">
-								<div>metric</div>
-							</div>
-							<div class="tag tag__color-metric">
-								<div>mau_30days</div>
-							</div>
-						</div>
-						<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-					</div>
-				</div>
-				<div class="card" style="margin-top: 23px; opacity: 0.6;">
-					<div class="card__content">
-						<div class="card__text">I have created a list of your team’s most popular charts.</div>
-						<div class="card__tag">
-							<div class="tag tag__color-all">
-								<div>JFYI</div>
-							</div>
-							<div class="tag tag__color-all">
-								<div>all</div>
-							</div>
-						</div>
-						<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-					</div>
-				</div>
-			</div>
-			</div>
-		</div>
-		<div class="text-area" style="color: #FFFFFF;">Your smart data space and #Slackassistant can
-			be ready in days. We’ll help you connect your data sources
-			 and dashboarding tools, prepare third parties
-			  and documentation and confirm connections between
-			   metrics and properties. You’re now ready
-				for instant answers to your data queries.
-	   </div>
-	   <div class="text-area" style="color: #FFFFFF;">Are you already using 
-		   any data tools? Do you need advice? No worries.<br/>We will help 
-		   you choose a proper data task for your task and connect
-			it to<br/>our system.
-	   </div>
-	   <div class="list-area">
-			<div class="list__item"><img src="/images/list_logo/logo_airtable.png" alt="LogoAirtable"/></div>
-			<div class="list__item"><img src="/images/list_logo/logo_amazonredshift.png" alt="LogoAmazonRedShift"/></div>
-			<div class="list__item"><img src="/images/list_logo/logo_azure.png" alt="LogoAzure"/></div>
-			<div class="list__item"><img src="/images/list_logo/logo_notion.png" alt="LogoNotion"/></div>
-			<div class="list__item"><img src="/images/list_logo/logo_tableau.png" alt="LogoTableau"/></div>
-			<div class="list__item"><img src="/images/list_logo/logo_databricks.png" alt="LogoDataBricks"/></div>
-			<div class="list__item"><img src="/images/list_logo/logo_confluence.png" alt="LogoConfluence"/></div>
-			<div class="list__item"><img src="/images/list_logo/logo_metabase.png" alt="LogoMetaBase"/></div>
-			<div class="list__item"><img src="/images/list_logo/logo_looker.png" alt="LogoLooker"/></div>
-			<div class="list__item"><img src="/images/list_logo/logo_google_sheets.png" alt="LogoGoogleSheets"/></div>
-			<div class="list__item"><img src="/images/list_logo/logo_posgresql.png" alt="LogoPosgreSql"/></div>
-			<div class="list__item"><img src="/images/list_logo/logo_cloud_storage.png" alt="LogoCloudStorage"/></div>
-		</div>
-		<img 
-			class="main-image"
-			src="/images/PICTURE.svg" 
-			alt="PictureImage"
-		/>
-		
-		<div class="email-search sticky" style="margin: auto;">
-			<form class="email__form">
-				<input 
-					name="search"
-					class="email__input" 
-					type="email"
-					placeholder="Enter E-mail"
-				/>
-				<button class="email__button" type="submit">Go</button>
-			</form>
-			<div class="email__text">Get started with your smart data space and assistant</div>
-		</div>
-
-		<div class="cards-area-desk">
-			<div style="display: flex; align-items: flex-start; gap: 8px;">
-			<div class="card" style="margin-top: 80px; opacity: 0.2;">
-				<div class="card__content">
-					<div class="card__text">Show me a detailed breakdown of MRR by pricing plan.</div>
-					<div class="card__tag">
-						<div class="tag tag__color-all">
-							<div>charts</div>
-						</div>
-						<div class="tag tag__color-all">
-							<div>all</div>
-						</div>
-					</div>
-					<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-				</div>
-			</div>
-			<div class="card" style="margin-top: 40px; opacity: 0.4;">
-				<div class="card__content">
-					<div class="card__text">Hey, it looks like you just started
-						 working at this company - here is
-						  a list of dashboards you will need</div>
-					<div class="card__tag">
-						<div class="tag tag__color-all">
-							<div>JFYI</div>
-						</div>
-						<div class="tag tag__color-all">
-							<div>all</div>
-						</div>
-					</div>
-					<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-				</div>
-			</div>
-			<div class="card" style="opacity: 1.0;">
-				<div class="card__content">
-					<div class="card__text">Can you help me add a new data source to our data space?</div>
-					<div class="card__tag">
-						<div class="tag tag__color-all">
-							<div>data sources</div>
-						</div>
-						<div class="tag tag__color-all">
-							<div>all</div>
-						</div>
-					</div>
-					<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-				</div>
-			</div>
-			</div>
-		</div> 
-		
-		<div class="cards-area-mob" style="margin: 0 -8px;">
-			<div style="display: flex; align-items: flex-start; gap: 8px;">
-				<div style="flex-basis: 50%;">
-					<div class="card" style="opacity: 0.4;margin-top: 28px;">
-						<div class="card__content">
-							<div class="card__text">
-								Hey, it looks like you just started working at this company - here is a list of dashboards you will need
-							</div>
-							<div class="card__tag">
-								<div class="tag tag__color-all">
-									<div>all</div>
-								</div>
-							</div>
-							<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-						</div>
-					</div>
-				</div>
-				<div style="flex-basis: 50%;">
-					<div class="card" style="opacity: 1.0;">
-						<div class="card__content">
-							<div class="card__text"">
-								Can you help me add a new data source to our data space?
-							</div>
-							<div class="card__tag">
-								<div class="tag tag__color-all">
-									<div>all</div>
-								</div>
-							</div>
-							<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-						</div>
-					</div>
-					<div class="card" style="margin-top: 30px; opacity: 0.2;">
-						<div class="card__content">
-							<div class="card__text"">
-								Show me a detailed breakdown of MRR by pricing plan.
-							</div>
-							<div class="card__tag">
-								<div class="tag tag__color-all">
-									<div>all</div>
-								</div>
-							</div>
-							<img class="card__like" src="/tags/icon_like.svg" alt="CardIconLike">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<footer id="control">
-		<div class="links-area" style="flex-basis: 50%;">
+    <header class="header">
+        <a href="/">
+            <img src="/images/logo.svg" alt="Logo">
+        </a>
+        <nav class="nav">
+            <a href="#control" style="display: flex; border: none; border-radius: 50%; background-color: inherit;">
+                <img src="/images/control.svg" alt="Control" style="max-width: 24px;">
+            </a>
+        </nav>
+      </header>
+      <!-- MAIN -->
+      <main class="main">
+        <div class="banner">
+            <div class="wrapper">
+                <img src="/images/MAIN_VISUAL.svg" alt="MainVisual" style="max-width: 320px;">
+            </div>
+            <div class="wrapper">
+                <p style="color: #000000; font-size: 72px;line-height: 100%;">
+                    <span style="color: #FF7474;">Imagine</span>
+                    <span class="typer" data-delay="100" data-deletedelay="1000" repeat="Infinty" style="color: black;"></span>
+                    <span class="cursor" data-delay="100" data-deletedelay="1000" repeat="Infinty" style="color: black;"></span>       
+                </p>
+            </div>
+            <div class="wrapper">
+                <img class="cards" src="/images/cards_block_desk_1.svg" alt="CardsBlock1">
+            </div>
+        </div>
+        <div class="container">
+            <div class="wrapper">
+                <p style="color: #000000">
+                    Develop a data-driven culture, reduce mistakes and make decisions quicker. 
+                    Our smart data space and #slackassistant can answer up to 80% of data 
+                    queries in seconds. Your data assistant will never take sick leave or 
+                    vacation, won’t need to be interviewed and will never quit.
+                </p>
+            </div>
+            <div class="wrapper">
+                <img class="app" src="/images/app_desk.svg" alt="Main" style="max-width: 1048px;filter: drop-shadow(0px 40px 80px rgba(0, 0, 0, 0.2));
+                border-radius: 24px;">
+            </div>
+            <div class="wrapper">
+                <img class="cards" src="/images/cards_block_desk_2.svg" alt="CardsBlock2">
+            </div>
+            <div class="wrapper">
+                <p style="color: #FFFFFF;">
+                    Your smart data space and #Slackassistant can be ready in days.
+                    We’ll help you connect your data sources and dashboarding tools,
+                    prepare third parties and documentation and confirm connections
+                    between metrics and properties. You’re now ready for instant answers
+                    to your data queries.
+                </p>
+            </div>
+            <div class="wrapper">
+                <p style="color: #FFFFFF;">
+                    Are you already using any data tools? Do you need advice? No worries.
+                    We will help you choose a proper data task for your task and connect
+                    it to our system.
+                </p>
+            </div>
+            <div class="list">
+                <div class="list_logo"><img src="/images/list_logo/logo_airtable.png" alt="LogoAirtable"/></div>
+                <div class="list_logo"><img src="/images/list_logo/logo_amazonredshift.png" alt="LogoAmazonRedShift"/></div>
+                <div class="list_logo"><img src="/images/list_logo/logo_azure.png" alt="LogoAzure"/></div>
+                <div class="list_logo"><img src="/images/list_logo/logo_notion.png" alt="LogoNotion"/></div>
+                <div class="list_logo"><img src="/images/list_logo/logo_tableau.png" alt="LogoTableau"/></div>
+                <div class="list_logo"><img src="/images/list_logo/logo_databricks.png" alt="LogoDataBricks"/></div>
+                <div class="list_logo"><img src="/images/list_logo/logo_confluence.png" alt="LogoConfluence"/></div>
+                <div class="list_logo"><img src="/images/list_logo/logo_metabase.png" alt="LogoMetaBase"/></div>
+                <div class="list_logo"><img src="/images/list_logo/logo_looker.png" alt="LogoLooker"/></div>
+                <div class="list_logo"><img src="/images/list_logo/logo_google_sheets.png" alt="LogoGoogleSheets"/></div>
+                <div class="list_logo"><img src="/images/list_logo/logo_posgresql.png" alt="LogoPosgreSql"/></div>
+                <div class="list_logo"><img src="/images/list_logo/logo_cloud_storage.png" alt="LogoCloudStorage"/></div>
+            </div>
+            <div class="wrapper">
+                <img src="/images/picture.svg" alt="Picture" style="max-width: 240px;">
+            </div>
+            <div class="email" id="email">
+                <form class="email__form">
+                    <input 
+                        name="search"
+                        class="email__input" 
+                        type="email"
+                        placeholder="Enter E-mail"
+                    />
+                    <button class="email__button" type="submit">Go</button>
+                </form>
+                <div class="email__text">Get started with your smart data space and assistant</div>
+            </div>
+            <div class="wrapper">
+                <img class="cards" src="/images/cards_block_desk_3.svg" alt="CardsBlock3"">
+            </div>
+        </div>
+      </main>
+      <!-- FOOTER -->
+      <footer class="footer" id="control">
+		<div class="links">
 			<a href="#">Pricing</a>
 			<a href="#">Contacts</a>
 			<a href="#">About Floverse</a>
 			<a href="#">Terms of service</a>
 			<a href="#">
-				<img src="/images/LINKEDIN.svg" alt="LinkedInLogo">
+                <div class="wrapper" style="justify-content: flex-start;">
+				    <img src="/images/linkedin.svg" alt="Linkedin" style="max-width: 32px;">
+                </div>
 			</a>
 		</div>
-		<div class="address-area" style="flex-basis: 50%;">
+		<div class="address">
 			<div>Floverse LTD<br> 
 				5 Merchant Sq, London W2 1AY, 
 				wework
 			</div>
 			<a href="#">
-				<div class="card__tag">
-					<div class="tag tag__color-address" style="padding: 6px 8px;">
-						<img src="tags/icon_arrow.svg" alt="TagIconMap">
-						<div>map</div>
-					</div>
-				</div>
+				<div class="wrapper" style="justify-content: flex-start;">
+				    <img src="/images/tag_map.svg" alt="Map" style="max-width: 69px;">
+                </div>
 			</a>
 			<a href="#">
-				<div class="card__tag">
-					<div class="tag tag__color-address" style="padding: 6px 8px;">
-						<img src="tags/icon_arrow.svg" alt="TagIconMap">
-						<div>contact form</div>
-					</div>
-				</div>
+				<div class="wrapper" style="justify-content: flex-start;">
+				    <img src="/images/tag_contact.svg" alt="Map" style="max-width: 133px;">
+                </div>
 			</a>
 		</div>
 	</footer>
-	  
-	<script src="/scripts/main.js"></script>
-	<script src="/scripts/typer.js"></script> 
+<script src="/scripts/main.js"></script> 
+<script src="/scripts/typer.js"></script> 
 </body>
 </html>

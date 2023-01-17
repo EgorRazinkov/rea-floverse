@@ -1,16 +1,25 @@
 'use strict';
 
-let size = window.matchMedia("(max-width: 1048px)"); 
+let size = window.matchMedia("(max-width: 960px)"); 
 
 const page = {
-     image : document.querySelector('.content-area img.app-image')
+     image : {
+      app: document.querySelector('.app'),
+      cards: document.querySelectorAll('.cards'),
+     }
 };
 
 function rerender() {
     if (size.matches) {
-        page.image.setAttribute('src', '/images/MAIN_MOB.svg');
+        page.image.app.setAttribute('src', '/images/app_mob.svg');
+        for (let i = 0; i < page.image.cards.length; ++i) {
+          page.image.cards[i].setAttribute('src', `/images/cards_block_mob_${i + 1}.svg`);
+        }
     } else {
-        page.image.setAttribute('src', '/images/MAIN.svg');
+        page.image.app.setAttribute('src', '/images/app_desk.svg');
+        for (let i = 0; i < page.image.cards.length; ++i) {
+          page.image.cards[i].setAttribute('src', `/images/cards_block_desk_${i + 1}.svg`);
+        }
     }
 }
 
