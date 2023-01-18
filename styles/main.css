@@ -221,8 +221,8 @@
 	border: none;
 	width: 100%;
 	max-width: 592px;
-	margin-top: 96px;
-	margin-bottom: 36px;
+	/* margin-top: 96px; */
+	/* margin-bottom: 36px; */
 }
 
 .sign__form {
@@ -325,6 +325,9 @@
 		[src="/images/login.svg"] {
 		  max-width: 300px !important;
 		}
+
+		
+
 		.hidden {
 			visibility: hidden;
 		}
