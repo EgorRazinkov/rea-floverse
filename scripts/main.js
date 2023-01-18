@@ -3,11 +3,23 @@
 let size = window.matchMedia("(max-width: 960px)"); 
 
 const page = {
-     image : {
+    image : {
       app: document.querySelector('.app'),
       cards: document.querySelectorAll('.cards'),
-     }
+    },
+    popup: {
+      index: document.querySelector('.cover')
+    },
+    email: document.querySelector('.email')
 };
+
+/*  work with buttons */
+
+function togglePopup() {
+	page.popup.index.classList.toggle('cover_hidden');
+}
+
+/* render */
 
 function rerender() {
     if (size.matches) {
@@ -26,6 +38,8 @@ function rerender() {
 size.addEventListener('change', () => {
     this.rerender();
 });
+
+
 
 
 /* init */

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    
+    <title>Floverse - Sign In</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body style="min-height: 100%; overflow: hidden;">
+    <header class="header">
+        <a href="/">
+            <img src="/images/logo.svg" alt="Logo">
+        </a>
+        <nav class="nav">
+            <a href="#control" style="display: flex; border: none; border-radius: 50%; background-color: inherit;">
+                <img src="/images/control.svg" alt="Control" style="max-width: 24px;">
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="wrapper" style="flex-direction: column; align-items: center;">
+            <div class="sign" id="sign">
+                <div class="sign__text">
+                    <span>Sign in</span>
+                    <span class="hidden" style="display: block;">or create an account</span>
+                </div>
+                <form class="sign__form">
+                    <input 
+                        name="signLogin"
+                        class="sign__input" 
+                        type="email"
+                        placeholder="Login"
+                    />
+                    <input 
+                        name="signPass"
+                        class="sign__input" 
+                        type="password"
+                        placeholder="Password"
+                    />
+                    <button class="button" type="submit" style="width: 100%;">Let's go</button>
+                </form>
+            </div>
+            <div class="wrapper">
+                <img src="/images/login.svg" alt="Login" style="max-width: 592px;">
+            </div>
+        </div>   
+    </main>
+</body>
+</html>

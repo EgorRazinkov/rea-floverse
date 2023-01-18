@@ -33,8 +33,8 @@
             <div class="wrapper">
                 <p style="color: #000000; font-size: 72px;line-height: 100%;">
                     <span style="color: #FF7474;">Imagine</span>
-                    <span class="typer" data-delay="100" data-deletedelay="1000" repeat="Infinty" style="color: black;"></span>
-                    <span class="cursor" data-delay="100" data-deletedelay="1000" repeat="Infinty" style="color: black;"></span>       
+                    <!-- <span class="typer" data-delay="100" data-deletedelay="1000" repeat="Infinty" style="color: black;"></span>
+                    <span class="cursor" data-delay="100" data-deletedelay="1000" repeat="Infinty" style="color: black;"></span>        -->
                 </p>
             </div>
             <div class="wrapper">
@@ -98,7 +98,7 @@
                         type="email"
                         placeholder="Enter E-mail"
                     />
-                    <button class="email__button" type="submit">Go</button>
+                    <button class="button" type="submit">Go</button>
                 </form>
                 <div class="email__text">Get started with your smart data space and assistant</div>
             </div>
@@ -110,11 +110,10 @@
       <!-- FOOTER -->
       <footer class="footer" id="control">
 		<div class="links">
-			<a href="#">Pricing</a>
+			<a href="login.html">Log In</a>
 			<a href="#">Contacts</a>
-			<a href="#">About Floverse</a>
 			<a href="#">Terms of service</a>
-			<a href="#">
+			<a href="https://www.linkedin.com/company/floverse/">
                 <div class="wrapper" style="justify-content: flex-start;">
 				    <img src="/images/linkedin.svg" alt="Linkedin" style="max-width: 32px;">
                 </div>
@@ -137,6 +136,30 @@
 			</a>
 		</div>
 	</footer>
+    <!-- POPUP -->
+    <div class="cover" id="popup">
+        <div class="popup">
+            <div class="wrapper">
+                <img src="/images/popup.svg" alt="Popup" style="max-width: 256px;">
+            </div>
+            <div class="wrapper">
+                <p style="font-size: 16px;">
+                    Thank you for requesting access 💙 Follow this link
+                    to help us faster prepare your first data space &  assistant
+                </p>
+            </div>
+            <button class="button" style="width: 100%;" onclick="togglePopup()">Go</button>
+            <button class="popup__close">
+                <div class="wrapper">
+                    <img style="max-width: 20px;" 
+                         src="/images/close_popup.svg" 
+                         alt="ClosePopup" 
+                         onclick="togglePopup()"
+                    />
+                </div>
+            </button>
+        </div>
+      </div>
 <script src="/scripts/main.js"></script> 
 <script src="/scripts/typer.js"></script> 
 </body>
