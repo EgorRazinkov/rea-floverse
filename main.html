@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/main.css">
-    <title>Floverse</title>
+    <title>Floverse - Terms</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
                 <img src="/images/control.svg" alt="Control" style="max-width: 24px;">
             </a>
         </nav>
-      </header>
+    </header>
       <!-- MAIN -->
       <main class="main">
         <div class="banner">
@@ -31,10 +31,11 @@
                 <img src="/images/MAIN_VISUAL.svg" alt="MainVisual" style="max-width: 320px;">
             </div>
             <div class="wrapper">
-                <p style="color: #000000; font-size: 72px;line-height: 100%;">
+                <p>
                     <span style="color: #FF7474;">Imagine</span>
-                    <!-- <span class="typer" data-delay="100" data-deletedelay="1000" repeat="Infinty" style="color: black;"></span>
-                    <span class="cursor" data-delay="100" data-deletedelay="1000" repeat="Infinty" style="color: black;"></span>        -->
+                    <!-- <span class="typed"></span> -->
+                    <span class="typer" data-delay="50" data-deletedelay="1000" repeat="Infinty" style="color: black;"></span>
+                    <span class="cursor" data-delay="50" data-deletedelay="1000" repeat="Infinty" style="color: black;"></span>       
                 </p>
             </div>
             <div class="wrapper">
@@ -98,7 +99,7 @@
                         type="email"
                         placeholder="Enter E-mail"
                     />
-                    <button class="button" type="submit">Go</button>
+                    <button class="button" onclick="togglePopup()"">Go</button>
                 </form>
                 <div class="email__text">Get started with your smart data space and assistant</div>
             </div>
@@ -108,11 +109,11 @@
         </div>
       </main>
       <!-- FOOTER -->
-      <footer class="footer" id="control">
+      <footer class="footer" id="control" style="max-width: 560px;">
 		<div class="links">
 			<a href="login.html">Log In</a>
 			<a href="#">Contacts</a>
-			<a href="#">Terms of service</a>
+			<a href="terms.html">Terms of service</a>
 			<a href="https://www.linkedin.com/company/floverse/">
                 <div class="wrapper" style="justify-content: flex-start;">
 				    <img src="/images/linkedin.svg" alt="Linkedin" style="max-width: 32px;">
@@ -137,7 +138,7 @@
 		</div>
 	</footer>
     <!-- POPUP -->
-    <div class="cover" id="popup">
+    <div class="cover cover_hidden" id="popup">
         <div class="popup">
             <div class="wrapper">
                 <img src="/images/popup.svg" alt="Popup" style="max-width: 256px;">

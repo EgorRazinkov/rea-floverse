@@ -10,30 +10,24 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="styles/terms.css"/>
+	<link rel="stylesheet" href="styles/main.css"/>
 </head>
-<body>
-	<div class="top-area">
-		<header>
-			<div class="wrapper">
-				<div class="logo">
-					<img src="images/LOGO.svg" alt="Logo"/>
-					<a href="#">
-						<h1>floverse</h1>
-					</a>
-				</div>
-				<button class="menu">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
-			</div>
-			<div class="shadow"></div>
-		</header>
-	</div>
-	<div class="content-area">
-		<h2>Terms of service</h2>
-		<div class="text-area">
+<body style="background-color: white;">
+	<header class="header">
+        <a href="/">
+            <img src="/images/logo.svg" alt="Logo">
+        </a>
+        <nav class="nav">
+            <a href="#control" style="display: flex; border: none; border-radius: 50%; background-color: inherit;">
+                <img src="/images/control.svg" alt="Control" style="max-width: 24px;">
+            </a>
+        </nav>
+    </header>
+    <!-- MAIN -->
+	<main class="main-terms">
+		<div class="wrapper">
+			<div style="flex: 1 1 0%; width: 100%;">
+			<h2>Terms of service</h2>
 			<p>
 				These Terms of Service (the “Terms”) are between you and 
 				Just Go With The Flow Tech Corp. (“Just Go With The Flow”, “we”, “us” and “our”) 
@@ -63,68 +57,40 @@
 				If you do not agree to these Terms or any modifications of Terms, you must discontinue your use 
 				of the Site and Services.
 			</p>
-		</div>
-	</div>
-	<footer>
-		<div class="footer-desk">
-			<div class="links-area">
-				<a style="opacity: 0.2;" href="#">About Floverse</a>
-				<a style="font-weight: 500;" href="#">Terms of service</a>
-			</div>
-			<div class="links-area">
-				<a style="opacity: 0.2;" href="#">Pricing</a>
-				<a style="opacity: 0.2;" href="#">Contacts</a>
-				<a href="#">
-					<img src="/images/LINKEDIN.svg" alt="LinkedInLogo">
-				</a>
-			</div>
-			<div class="address-area">
-				<div style="font-weight: 500;">Floverse LTD<br> 
-					5 Merchant Sq, London W2 1AY, 
-					wework
-				</div>
-				<a href="#">
-					<div class="card__tag">
-						<div class="tag tag__color-address" style="padding: 6px 8px;">
-							<img src="tags/icon_arrow.svg" alt="TagIconMap">
-							<div>map</div>
-						</div>
-					</div>
-				</a>
 			</div>
 		</div>
-		<div class="footer-mob">
-			<div class="links-area" style="flex-basis: 50%;">
-				<a href="#">Pricing</a>
-				<a href="#">Contacts</a>
-				<a href="#">About Floverse</a>
-				<a href="#">Terms of service</a>
-				<a href="#">
-					<img src="/images/LINKEDIN.svg" alt="LinkedInLogo">
-				</a>
+	</main>
+	
+	<!-- FOOTER -->
+	<footer class="footer" id="control" style="margin: 0 auto; margin-top: 3.5rem; max-width: 1048px;">
+		<div class="links">
+			<a href="https://www.linkedin.com/company/floverse/">About Floverse</a>
+			<a href="#">Terms of service</a>
+		</div>
+		<div class="links">
+			<a href="#">Pricing</a>
+			<a href="#">Contacts</a>
+			<a href="https://www.linkedin.com/company/floverse/">
+                <div class="wrapper" style="justify-content: flex-start;">
+				    <img src="/images/linkedin.svg" alt="Linkedin" style="max-width: 32px;">
+                </div>
+			</a>
+		</div>
+		<div class="address">
+			<div>Floverse LTD<br> 
+				5 Merchant Sq, London W2 1AY, 
+				wework
 			</div>
-			<div class="address-area" style="flex-basis: 50%;">
-				<div>Floverse LTD<br> 
-					5 Merchant Sq, London W2 1AY, 
-					wework
-				</div>
-				<a href="#">
-					<div class="card__tag">
-						<div class="tag tag__color-address" style="padding: 6px 8px;">
-							<img src="tags/icon_arrow.svg" alt="TagIconMap">
-							<div>map</div>
-						</div>
-					</div>
-				</a>
-				<a href="#">
-					<div class="card__tag">
-						<div class="tag tag__color-address" style="padding: 6px 8px;">
-							<img src="tags/icon_arrow.svg" alt="TagIconMap">
-							<div>contact form</div>
-						</div>
-					</div>
-				</a>
-			</div>
+			<a href="#">
+				<div class="wrapper" style="justify-content: flex-start;">
+				    <img src="/images/tag_map.svg" alt="Map" style="max-width: 69px;">
+                </div>
+			</a>
+			<a href="#">
+				<div class="wrapper" style="justify-content: flex-start;">
+				    <img src="/images/tag_contact.svg" alt="Map" style="max-width: 133px;">
+                </div>
+			</a>
 		</div>
 	</footer>
 </body>

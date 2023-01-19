@@ -20,6 +20,23 @@
 		padding-right: 52px;
   }
   
+.banner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.banner div.wrapper:nth-child(2) {
+	align-items: center;
+	min-height: 300px;
+	max-width: 860px;
+}
+.banner div.wrapper:nth-child(2) p {
+	color: #000000;
+	 font-size: 72px;
+	 line-height: 100%;
+}
+
   .main {
 	margin: 0 52px;
 	display: flex;
@@ -144,7 +161,6 @@
 	  gap: 8px;
 	  align-items: flex-start;
 	  margin: 80px auto;
-	  max-width: 560px;
 	  font-size: 16px;
 	  line-height: 125%;
 	  color: #000000;
@@ -267,7 +283,42 @@
 	visibility: visible;
 }
 
-  @media screen and (max-width: 640px) {
+.main-sign {
+	display: flex;
+	flex: 1 1 0%;
+	align-items: stretch;
+}
+
+.main-terms {
+	display: flex;
+	flex: 1 1 0%;
+	align-items: stretch;
+}
+
+.main-terms div.wrapper {
+	flex-direction: column; 
+	align-items: center; 
+	max-width: 1048px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.main-terms div.wrapper h2 {
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 120%;
+  color: #000000;
+  margin-bottom: 2.5rem;
+}
+
+.main-terms div.wrapper div p {
+  font-weight: 400; 
+  font-size: 18px; 
+  line-height: 150%;
+  text-align: left;
+}
+
+  @media screen and (max-width: 440px) {
 	  body {
 		  font-size: 32px;
 		  padding-left: 20px;
@@ -330,6 +381,10 @@
 		
 		.hidden {
 			visibility: hidden;
+		}
+
+		.main-terms div.wrapper h2 {
+			font-size: 18px;
 		}
   }
   

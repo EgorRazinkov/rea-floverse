@@ -1,6 +1,6 @@
 'use strict';
 
-let size = window.matchMedia("(max-width: 960px)"); 
+let size = window.matchMedia("(max-width: 440px)"); 
 
 const page = {
     image : {

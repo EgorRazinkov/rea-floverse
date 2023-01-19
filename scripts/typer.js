@@ -1,6 +1,62 @@
 'use strict';
 
 
+// const dataset = [
+// 	"if\neach member of your team had a personal data analyst",
+// 	"having an Alexa that could handle your data tasks",
+// 	"having your data requests answered in seconds, not hours or days",
+// 	"if your data team could focus on intelligent tasks instead of routine ones",
+// 	"if the “data-driven company” became more than just a phrase",
+// 	"having these things set up for free in days"
+// ];
+
+// var i = 0;
+//  /* The text */
+// var speed = 50; /* The speed/duration of the effect in milliseconds */
+// let element = document.querySelector('.typed');
+// var j = 0;
+// let currentPos = 0;
+// let currentLineIndex = 0;
+// let currentLine = dataset[currentLineIndex];
+// let currentLength = dataset[currentLineIndex].length;
+// let isBusy = false;
+
+// function typeLine() {
+//   if (i < currentLength) {
+//     isBusy = true;
+//     element.innerHTML += (currentLine.charAt(i) == '\n' ? '<br/>' : currentLine.charAt(i));
+//     i++;
+//     setTimeout(typeLine, speed);
+//   } else {
+//     isBusy = false;
+//     clearTimeout(typeLine, speed);
+//   }
+// }
+
+// function deleteLine() {
+//   if (i < currentLength) {
+//     isBusy = true;
+//     element.innerHTML += (currentLine.charAt(i) == '\n' ? '<br/>' : currentLine.charAt(i));
+//     i++;
+//     setTimeout(typeLine, speed);
+//   } else {
+//     isBusy = false;
+//     clearTimeout(typeLine, speed);
+//   }
+// }
+
+// function typeDataset() {
+//   if (isBusy) {
+//     return;
+//   }
+//   i = 0;
+//   currentLineIndex++;
+//   currentLine = dataset[currentLineIndex];
+//   typeLine(currentLine);
+// }
+
+// setInterval(typeDataset, 1000);
+
 const datasetWords = [
 	"if each member of your team had a personal data analyst",
 	"having an Alexa that could handle your data tasks",
