@@ -219,10 +219,11 @@
 	justify-content: center;
 	align-items: center;
 	border: none;
-	width: 100%;
+	flex: 1 1 0%;
+	width: 100%; 
+	padding-top: 3.5rem; 
+	padding-bottom: 3.5rem;
 	max-width: 592px;
-	/* margin-top: 96px; */
-	/* margin-bottom: 36px; */
 }
 
 .sign__form {
@@ -304,13 +305,18 @@
 		max-width: 208px !important;
 	  }
 
-	  [src="/images/login.svg"] {
+
+
+	  .main-sign div.wrapper div.wrapper {
+		margin-left: -3.5rem !important; 
+		margin-bottom: 0 !important;
 		max-width: 300px !important;
 	  }
 
-	  .sign {
-		margin-bottom: 96px;
-		}
+	 .sign {
+	padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+	}
 	
 		.sign__form {
 			margin-top: 0px;
@@ -321,13 +327,7 @@
 		 .sign__input::placeholder {
 			font-weight: 400;
 		}
-	
-		[src="/images/login.svg"] {
-		  max-width: 300px !important;
-		}
-
 		
-
 		.hidden {
 			visibility: hidden;
 		}
