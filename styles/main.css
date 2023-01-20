@@ -19,7 +19,19 @@
 		padding-left: 52px;
 		padding-right: 52px;
   }
-  
+
+  .typed::after {
+	content: '|';
+	animation: blink-caret 0.75s step-end infinite;
+  }
+
+
+  @keyframes blink-caret {
+	from, to { color: transparent }
+	50% { color: black; }
+  }
+
+
 .banner {
 	display: flex;
 	flex-direction: column;
@@ -29,7 +41,7 @@
 .banner div.wrapper:nth-child(2) {
 	align-items: center;
 	min-height: 300px;
-	max-width: 860px;
+	max-width: 1048px;
 }
 .banner div.wrapper:nth-child(2) p {
 	color: #000000;
